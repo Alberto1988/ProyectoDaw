@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>Modificaciones</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../Aspecto/cabecera.css" />
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="./JQuery/jquery_1.8.3.js"></script>
+    <script src="./JQuery/jquery-ui.js"></script>
+	<script src="./JQuery/datepicker.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+</head>
+<body>
+
+<?php while ($obj = $modifico->fetch_object()){		
+				LimpiaResultados($obj);
+?>
+
+<form action="./modulomedicos/controladores/medicosControlador.php" method="POST" name="formulario">
+	<TABLE align="center">
+		<TR>
+			<TD>ID_Medico:</TD>
+			<TD><INPUT TYPE="text" NAME="id2" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->id_medico ?>" readonly></TD>
+		</TR>
+		<TR>
+			<TD>Cedula:</TD>
+			<TD><INPUT TYPE="text" NAME="cedula2" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->cedula ?>"></TD>
+		</TR>
+		<TR>
+			<TD>Nombre:</TD>
+			<TD><INPUT TYPE="text" NAME="nombre2" onkeypress="return soloLetras(event)" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->nombre_medico ?>"></TD>
+		</TR>
+		<TR>
+			<TD>Primer Apellido:</TD>
+			<TD><INPUT TYPE="text" NAME="apellido1_medico2" onkeypress="return soloLetras(event)" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->apellido_medico1 ?>"></TD>
+		</TR>
+		<TR>
+			<TD>Segundo Apellido:</TD>
+			<TD><INPUT TYPE="text" NAME="apellido2_medico2" onkeypress="return soloLetras(event)" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->apellido_medico2 ?>"></TD>
+		</TR>
+		<TR>
+			<TD>Fecha Nacimiento:</TD>
+			<TD><input type="text" NAME="fecha_me2" class="datepicker" value="<?php echo $obj->fecha_medico ?>" /></TD>
+		</TR>
+		<TR>
+			<TD>Especialidad:</TD>
+			<TD><INPUT TYPE="text" NAME="especialidad2" onkeypress="return soloLetras(event)" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->especialidad ?>"></TD>
+		</TR>
+		<TR>
+			<TD>Usuario:</TD>
+			<TD><INPUT TYPE="text" NAME="usu2" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->usu_medico ?>"></TD>
+		</TR>
+		<TR>
+			<TD>Contrasenya:</TD>
+			<TD><INPUT TYPE="text" NAME="pass2" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->pass_medico ?>"></TD>
+		</TR>
+		<TR>
+			<TD colspan="2"><INPUT TYPE="submit" NAME="modifica2" VALUE="Modifica"></TD>
+		</TR>
+	</TABLE>
+</form>
+<?php } ?>
+</body>
+</html>

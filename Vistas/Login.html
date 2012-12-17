@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>LOGIN</title>
+	<link type="text/css" rel="stylesheet" media="all" href="./Aspecto/cabecera.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="./Aspecto/Desplegable.css" />
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyADvcBmz9TnHjbdxJu4Na5qWerQms4Hjtg" type="text/javascript"></script> 
+    <script type="text/javascript" src="./JQuery/login.js"></script>
+
+	<link type="text/css" rel="stylesheet" media="all" href="./Aspecto/Flow.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="./JQuery/jflow.plus.js" type="text/javascript"></script>
+    <script type="text/javascript">  
+      
+    function inicializar() {  
+      
+        if (GBrowserIsCompatible()) {  
+            var map = new GMap2(document.getElementById("map"));  
+            map.setCenter(new GLatLng(38.821926,-0.600665), 18); 
+			    map.addControl(new GMapTypeControl());  
+				map.addControl(new GLargeMapControl());  
+				map.addControl(new GScaleControl());  
+				map.addControl(new GOverviewMapControl());  
+				
+				function informacion(ubicacion, descripcion) {  
+  
+			var marca = new GMarker(ubicacion);  
+			GEvent.addListener(marca, "click", function() {  
+			marca.openInfoWindowHtml(descripcion); } );  
+  
+			return marca;  
+  
+				}  
+			var ubicacion = new GLatLng(38.821926,-0.600665);  
+			var descripcion = '<b>Clinica Ontinyent</b><br/>Aquí está mi hospital<br />';  
+			var marca = informacion(ubicacion, descripcion);  
+  
+			map.addOverlay(marca);  
+        }  
+    }  
+      
+    </script>  
+<script language="javascript">
+	$(document).ready(function(){
+	    $("#myController").jFlow({
+			controller: ".jFlowControl", 
+			slideWrapper : "#jFlowSlider", 
+			slides: "#mySlides",  
+			selectedWrapper: "jFlowSelected",  
+			width: "800px",  
+			height: "350px",  
+			duration: 400,  
+			prev: ".jFlowPrev", 
+			next: ".jFlowNext", 
+			auto: true	
+    });
+});
+</script>
+
+</head>
+<body onload="initialize()" onunload="GUnload()">
+<form action="./modulomedicos/controladores/medicosControlador.php" method="POST">
+	<div class="principal">
+        <div class="contenedor"> 
+			<h1 align="center">CLINICA ONTINYENT</h1>
+        </div>
+    </div>
+	<div id="container">
+<div id="mySlides">
+    <div id="slide1">    
+        <img src="./Aspecto/sanitario.jpg" alt="Slide 1 jFlow Plus" />
+        <span><h3>Disfruta de nuestros servicio sanitario!</h3><p>Nuestros preparados especialistas haran lo mejor para tu salud. </p></span>
+	</div>    	
+    <div id="slide2">
+        <img src="./Aspecto/enfermeria.jpg" alt="Slide 2 jFlow Plus" />
+        <span><h3>Tratamiento Profesional!</h3><p>Equipos preparados para dar lo mejor por tí. </p></span>
+    </div>   
+	<div id="slide3">
+        <img src="./Aspecto/instalaciones.jpg" alt="Slide 3 jFlow Plus" />
+        <span><h3>Atención Personalizada!</h3><p>Con las mejores instalaciones y una buena atención personalizada </p></span>
+    </div>
+</div>
+
+<div id="myController">
+   <span class="jFlowControl"></span>
+   <span class="jFlowControl"></span>
+   <span class="jFlowControl"></span>
+</div>
+
+<span class="jFlowPrev"><div></div></span>
+<span class="jFlowNext"><div></div></span>
+</div>
+
+
+	
+	
+	<TABLE id="login" align="center">
+		<TR>
+			<TD>Usuario:</TD>
+			<TD><INPUT TYPE="text" NAME="login" id="login" SIZE="20" MAXLENGTH="30"></TD>
+		</TR>
+		<TR>
+			<TD>Contrase&ntildea:</TD>
+			<TD><INPUT TYPE="password" NAME="pass" id="pass" SIZE="20" MAXLENGTH="30"></TD>
+		</TR>
+		<TR>
+			<TD>Tipousuario:</TD>
+			<TD><select name="tipousuario" id="tipousuario">
+					<option value="A" selected="selected">Administrador</option>
+					<option value="M">Medico</option>
+					<option value="E">Enfermero</option>
+					<option value="P">Pacientes</option>
+				</select>
+			</TD>
+		</TR>
+		<TR>
+			<TD><INPUT TYPE="submit" NAME="aceptar" VALUE="Aceptar"></TD>
+		</TR>
+		
+	</TABLE>
+	    <div id="map" style="width:400px; height:300px">  
+    <script type="text/javascript">inicializar();</script>  
+    </div>  
+</FORM>
+</body>
+</html>

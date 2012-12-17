@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>Modificaciones</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../Aspecto/cabecera.css" />
+<script type="text/javascript" src=""></script>
+</head>
+<body>
+
+<?php while ($obj = $modifico->fetch_object()){		
+				LimpiaResultados($obj);
+?>
+
+<form action="./modulousuarios/controladores/usuariosControlador.php" method="POST" name="formulario">
+	<TABLE align="center">
+		<TR>
+			<TD>ID_Usuario:</TD>
+			<TD><INPUT TYPE="text" NAME="id2" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->id_usuario ?>" readonly></TD>
+		</TR>
+		<TR>
+			<TD>Usuario:</TD>
+			<TD><INPUT TYPE="text" NAME="usuario2" SIZE="20" MAXLENGTH="30" value="<?php echo $obj->usuario ?>"></TD>
+		</TR>
+		<TR>
+			<TD>Password:</TD>
+			<TD><INPUT TYPE="text" NAME="pass2" SIZE="20" MAXLENGTH="60" value="<?php echo $obj->password ?>"></TD>
+		</TR>
+		<TR>
+			<TD>Tipo:</TD>
+			<TD><INPUT TYPE="text" NAME="tipo2" SIZE="20" MAXLENGTH="60" value="<?php echo $obj->tipo_usuario ?>"></TD>
+		</TR>
+		<TR>
+			<TD colspan="2"><INPUT TYPE="submit" NAME="modifica" VALUE="Modifica"></TD>
+		</TR>
+	</TABLE>
+</form>
+<?php } ?>
+</body>
+</html>

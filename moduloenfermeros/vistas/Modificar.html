@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>Modificaciones</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../Aspecto/cabecera.css" />
+<script type="text/javascript" src="./moduloenfermeros/Javascript/Modificar.js"></script>
+</head>
+<body>
+<form action="" method="POST" onSubmit="return false;" name="formulario">
+<TABLE>
+    <tr>
+      <td colspan="4" align="center" valign="middle"><label>
+	  Cedula: <input name="buscar" type="text" id="cedula" autocomplete="off"/></label></td>
+    </tr>
+	<tr><td>&nbsp;</td></tr>
+    <tr>
+      <td colspan="4" align="center">
+        <tr>
+          <td align="center"><label><input type="radio" name="radio" id="radio1" value="radio1"/>Desc</label></td>
+          <td align="center"><label><input type="radio" name="radio" id="radio2" value="radio2"/>Asc</label></td>
+		  <td align="center"><label>
+			<select name="criterio_ord" id="criterio_ord" >
+				<option value="cedula" >Cedula</option>	
+				<option value="nombre_enf" >Nombre</option>			
+			</select>
+		  </label></td>
+          <td align="center"><label>
+            <select name="mas" id="mas" >
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="all">Todos</option>
+            </select>
+          </label></td>
+        </tr>
+      </td>
+	  <td colspan="5" align="center"><div id="resultados"></div><br></td>
+    </tr>
+</TABLE>
+</form>
+
+</body>
+</html>

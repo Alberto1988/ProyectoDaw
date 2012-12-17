@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>ALTAS</title>
+<link type="text/css" rel="stylesheet" media="all" href="../../Aspecto/juan.css" />
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+   <script language="JavaScript" src="./JQuery/gen_validatorv4.js"
+    type="text/javascript" xml:space="preserve"></script>
+    <script src="./JQuery/jquery_1.8.3.js"></script>
+    <script src="./JQuery/jquery-ui.js"></script>
+	<script src="./JQuery/datepicker.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+
+
+</head>
+	<form action="./modulomedicos/controladores/medicosControlador.php" method="POST" name="myform">
+		<TABLE>
+		<TR>
+			<TD>Cedula:</TD>
+			<TD><INPUT TYPE="text" NAME="cedula" SIZE="20" MAXLENGTH="30">
+			<div id='myform_cedula_errorloc' class="error_strings"></TD>
+		</TR>
+		<TR>
+			<TD>Nombre:</TD>
+			<TD><INPUT TYPE="text" NAME="nombre" SIZE="20" MAXLENGTH="30">
+			<div id='myform_nombre_errorloc' class="error_strings"></div></TD>
+		</TR>
+		<TR>
+			<TD>Primer Apellido:</TD>
+			<TD><INPUT TYPE="text" NAME="apellido1_medico" SIZE="20" MAXLENGTH="30">
+			<div id='myform_apellido1_medico_errorloc' class="error_strings"></div></TD>
+		</TR>
+		<TR>
+			<TD>Segundo Apellido:</TD>
+			<TD><INPUT TYPE="text" NAME="apellido2_medico" onkeypress="return soloLetras(event)" SIZE="20" MAXLENGTH="30"><div id='myform_apellido2_medico_errorloc' class="error_strings">
+			</div></TD>
+		</TR>
+		<TR>
+			<TD>Fecha Nacimiento:</TD>
+			<TD><input type="text" NAME="fecha_me" class="datepicker" /></TD>
+		</TR>
+		<TR>
+			<TD>Especialidad:</TD>
+			<TD><INPUT TYPE="text" NAME="especialidad" SIZE="20" MAXLENGTH="30"><div id='myform_especialidad_errorloc' class="error_strings"></div></TD>
+		</TR>
+		<TR>
+			<TD>Usuario:</TD>
+			<TD><INPUT TYPE="text" NAME="usu" SIZE="20" MAXLENGTH="30"><div id='myform_usu_errorloc' class="error_strings"></div></TD>
+		</TR>
+		<TR>
+			<TD>Contrasenya:</TD>
+			<TD><INPUT TYPE="text" NAME="pass" SIZE="20" MAXLENGTH="30"><div id='myform_pass_errorloc' class="error_strings"></div></TD>
+		</TR>
+		<TR>
+			<TD><INPUT TYPE="submit" NAME="alta" VALUE="Alta"></TD>
+		</TR>
+	</TABLE>
+	</form>
+	<script language="JavaScript" src="./modulomedicos/Javascript/validar.js"
+    type="text/javascript" xml:space="preserve"></script>
+
+         
+
+</body>
+</html>
