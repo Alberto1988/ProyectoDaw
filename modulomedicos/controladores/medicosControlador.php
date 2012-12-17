@@ -65,7 +65,7 @@ function ComprobarAdministrador(){
 			header("Location: index.php?val=");
 	}
 function buscar(){
-	require './modulomedicos/vistas/Buscar.html';
+	require './datatable/datatable.html';
 }
 function eliminar(){
 	require './modulomedicos/vistas/baja.html';

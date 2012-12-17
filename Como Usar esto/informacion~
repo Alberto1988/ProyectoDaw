@@ -1,0 +1,29 @@
+BASE DE DATOS: clinica.sql (PHPmyAdmin)
+
+Usuario:root Contraseña:root
+
+Login:
+
+Usuario: Alberto2 Contraseña: Miras1
+
+ruta para acceder al proyecto en el navegador: http://localhost:8080/Proyecto/ProyectoFinal/
+
+Todos los JQuery, los he puesto en la carpeta que hay JQuery.
+
+Si quieres encontrar donde están los Ajax, en la carpeta ProyectoFinal, en las carpetas de modulos..., dentro de la carpeta javascript, puedes ver la parte de Ajax. Ya que en la carpeta modelo, está la parte de php que gasto para el Ajax.
+
+Validaciones, están en la carpeta de Javascript, como validar.js, y se lo añado a los html, de mis altas, que se encuentran dentro de los modulos, en vistas. Gasto el genvalidator.
+
+Los text Area los gasto en niceEditor. Los uso en el modulopacientes, en Vistas, las altas y modificaciones, para los diagnosticos.
+
+La documentación, la he puesto en todos los js de las carpetas de Javascript, dentro de los modulos.
+
+Los datepicker, los he gastado para las fechas de los modulos en medicos, pacientes y enfermeros.
+
+La aplicación API de GoogleMaps, la he puesto en el login. El js de este se puede acceder dentro de ProyectoFinal-->Vistas, ahí dentro tengo el html del login y el js. Dentro de este js, es donde creo todos los elementos que vemos en el mapa.
+
+
+
+
+
+

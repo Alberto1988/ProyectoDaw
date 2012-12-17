@@ -1,16 +1,4 @@
-/* Copyright (c) 2010 WordImpressed.com jFlow Plus derived from Kean Loong Tan's orgininal jFlow http://www.wordimpressed.com
 
- * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
-
- * jFlow 1.2 (Plus)
-
- * Version: jFlow Plus
-
- * Requires: jQuery 1.2+
-
- */
-
- 
 
 (function($) {
 

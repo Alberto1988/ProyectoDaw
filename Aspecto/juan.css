@@ -60,7 +60,7 @@ TABLE TR {
 	color:black;
 }
 TABLE TD{
-	color:#202020;
+	color:white;
 }
 p n_alta{
 	position:absolute;
@@ -127,9 +127,60 @@ TABLE#muestra{
 	border-radius: 22px;
 	border: 1px solid #7d787d;
 }
+ @media screen and (min-width:1200px){ 
+	.principal {
+    width: 1100px;
+	}
+    .contenedor {
+    width: 1100px;
 
+}
+	TABLE{
+	width: 1100px;
+	
+}
+	TABLE#muestra{
+	width: 1100px;
+}
+	table#med{
+	width: 1100px;
 
+	
+}
 
+form#bajas{
+	width:1100px;
+}
+	
+}
 
+@media screen and (max-width:320px){  
+		.principal {
+    width: auto;
+	height: auto;
+	}
+    .contenedor {
+    width: auto;
+	height: auto;
+}
+	TABLE{
+	width: auto;
+	height: auto;
+}
+	TABLE#muestra{
+	width: auto;
+	height: auto;
+}
+	table#med{
+	width: auto;
+	height: auto;
 
+	
+}
 
+form#bajas{
+	width:auto;
+	height: auto;
+}
+}
+ 

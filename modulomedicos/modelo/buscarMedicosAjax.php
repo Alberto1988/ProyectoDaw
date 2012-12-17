@@ -21,11 +21,11 @@ else
 	$criterio_ord="nombre_medico"; 
 	
 $sql="SELECT * FROM medicos order by $criterio_ord ".$orden." ".$mas;
-if($_GET["cedula"]!=""){
-	$cedula="%".$_GET["cedula"]."%";
-	$sql="SELECT * FROM medicos where (nombre_medico like '$cedula') or (cedula like '$cedula') order by $criterio_ord ".$orden." ".$mas;
+if($_GET["cedula3"]!=""){
+	$cedula2="%".$_GET["cedula3"]."%";
+	$sql="SELECT * FROM medicos where (nombre_medico like '$cedula2') or (cedula like '$cedula2') order by $criterio_ord ".$orden." ".$mas;
 }
-else if($_GET["cedula"]=="")//el us no introduce nada en el input text
+else if($_GET["cedula3"]=="")//el us no introduce nada en el input text
 	$sql = "select * from medicos where nombre_medico not LIKE '%'";
 	
 $cadena="";

@@ -43,7 +43,7 @@ try{
 		throw new Exception('Error realizando consulta:'.$db->error, $db->errno);
 
 	if ($resultado->num_rows > 0){
-		$cadena.= '<TABLE id="muestra">';
+		$cadena.= '<TABLE id="muestra" align="center">';
 			$cadena.='<tr>';
 				$cadena.='<th>ID</th>';
 				$cadena.='<th>CLAVE</th>';

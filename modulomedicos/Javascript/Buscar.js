@@ -19,7 +19,7 @@ addEvent(window,'load',inicializarEventos,false);
 * @param ob4 Almaceno mas mediante DOM
 */
 function inicializarEventos(){
-  var ob=document.getElementById('cedula');
+  var ob=document.getElementById('cedula3');
   addEvent(ob,'keyup',presionTecla,false);
   var ob1=document.getElementById('radio1');
   addEvent(ob1,'click',presionTecla,false);
@@ -37,7 +37,7 @@ function inicializarEventos(){
 function presionTecla(e){
   conexion1=crearXMLHttpRequest();
   conexion1.onreadystatechange = procesarEventos;
-  conexion1.open('GET','./modulomedicos/modelo/buscarMedicosAjax.php?cedula='+document.getElementById('cedula').value+"&radio1="+document.getElementById('radio1').checked+
+  conexion1.open('GET','./modulomedicos/modelo/buscarMedicosAjax.php?cedula3='+document.getElementById('cedula3').value+"&radio1="+document.getElementById('radio1').checked+
 	"&radio2="+document.getElementById('radio2').checked+"&criterio_ord="+document.getElementById('criterio_ord').value+"&mas="+document.getElementById('mas').value, true);
   conexion1.send(null);
 }
