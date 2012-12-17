@@ -1,0 +1,56 @@
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Alta Médicos</title>
+	<link type="text/css" rel="stylesheet" media="all" href="../Aspecto/cabecera.css" />
+	
+		<script type="text/javascript" src="../Javascript/altas.js"></script>
+</head>
+<body>
+
+<form action="funcion_alta.php" name="formulario" method="get">
+	<TABLE>
+		<TR>
+			<TD>Cedula:</TD>
+			<TD><INPUT TYPE="text" NAME="cedula" SIZE="20" MAXLENGTH="30"></TD>
+		</TR>
+		<TR>
+			<TD>Nombre:</TD>
+			<TD><INPUT TYPE="text" NAME="nombre" onkeypress="return soloLetras(event)" SIZE="20" MAXLENGTH="30"></TD>
+		</TR>
+		<TR>
+			<TD><INPUT TYPE="submit" NAME="alta" VALUE="Alta"></TD>
+		</TR>
+	</TABLE>
+</FORM>
+</body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<title>ALTAS</title>
+<link type="text/css" rel="stylesheet" media="all" href="../Aspecto/cabecera.css" />
+
+</head>
+
+<body>
+    
+    <div class="principal">
+        <div class="contenedor">
+            <ul class="menu">
+                <li><a href="alta_medico.html">M&eacute;dicos</a></li>
+                <li><a href="alta_usuarios.php">Usuarios</a></li>
+                <li><a href="alta_pacientes.php">Pacientes</a></li>
+                <li><a href="alta_consultas.php">Consultas</a></li>
+				<li><a href="../Principal/principal.php">Menu Principal</a></li>
+                <li class="active"><a rel="external nofollow" href="http://www.msc.es">Ministerio</a></li>
+            </ul>
+        </div>
+    </div>
+
+         
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MENU PRINCIPAL</title>
+<link type="text/css" rel="stylesheet" media="all" href="./Aspecto/Desplegable.css" />
+<link type="text/css" rel="stylesheet" media="all" href="./Aspecto/cabecera.css" />
+
+</head>
+
+
+<body>
+<?php 
+require './Aspecto/libreria.inc';
+InicializarSesion(0);?>
+<ul class="mi-menu">
+				<li><a href="#"> Usuarios </a>
+				<ul>
+				<li><a href="index.php?controlador=usuarios&accion=alta&val=ok"> Altas </a></li>
+				<li><a href="index.php?controlador=usuarios&accion=eliminar&val=ok"> Bajas </a></li>
+				<li><a href="index.php?controlador=usuarios&accion=modificar&val=ok"> Modificaciones </a></li>
+				<li><a href="index.php?controlador=usuarios&accion=buscar&val=ok"> Consultas </a></li>
+				</ul>
+				</li>
+					<li>
+						<a href="#"> Pacientes </a>
+			<ul>
+				<li><a href="index.php?controlador=pacientes&accion=alta&val=ok"> Altas </a></li>
+				<li><a href="index.php?controlador=pacientes&accion=eliminar&val=ok"> Bajas </a></li>
+				<li><a href="index.php?controlador=pacientes&accion=modificar&val=ok"> Modificaciones </a></li>
+				<li><a href="index.php?controlador=pacientes&accion=buscar&val=ok"> Consultas </a></li>
+			</ul>
+				</li>
+				<li><a href="#"> Medicos </a>
+			<ul>
+					<li><a href="index.php?controlador=medicos&accion=alta&val=ok"> Altas </a></li>
+				<li><a href="index.php?controlador=medicos&accion=eliminar&val=ok"> Bajas </a></li>
+				<li><a href="index.php?controlador=medicos&accion=modificar&val=ok"> Modificaciones </a></li>
+				<li><a href="index.php?controlador=medicos&accion=buscar&val=ok"> Consultas </a></li>
+			</ul>	
+				</li>
+				<li><a href="#"> Enfermeros/as </a>
+			<ul>
+					<li><a href="index.php?controlador=enfermeros&accion=alta&val=ok"> Altas </a></li>
+				<li><a href="index.php?controlador=enfermeros&accion=eliminar&val=ok"> Bajas </a></li>
+				<li><a href="index.php?controlador=enfermeros&accion=modificar&val=ok"> Modificaciones </a></li>
+				<li><a href="index.php?controlador=enfermeros&accion=buscar&val=ok"> Consultas </a></li>
+			</ul>	
+				</li>
+			<li><a href="#">Logout(<?php echo $_SESSION['userId']?>)</a>
+				<ul>
+					<li><a href="index.php?controlador=medicos&accion=logout&val=">Cerrar Sesion</a></li>
+				</ul>
+			
+			</li>
+				
+			
+</ul>
+
+
+        </div>
+    </div>
+
+         
+
+</body>
+</html>

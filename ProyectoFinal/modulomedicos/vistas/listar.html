@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head>
+<body>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Cedula</th>
+			<th>Nombre</th>
+			<th>1erApellido</th>
+			<th>2oApellido</th>
+			<th>Nacimiento</th>
+			<th>Especialidad</th>
+			<th>Usuario</th>
+			<th>Contraseña</th>
+		</tr>
+		<?php while ($obj = $medicos->fetch_object()){		
+				LimpiaResultados($obj);
+		?>
+			<tr>
+				<td><?php echo $obj->id_medico?></td>
+				<td><?php echo $obj->cedula?></td>
+				<td><?php echo $obj->nombre_medico?></td>
+				<td><?php echo $obj->apellido_medico1?></td>
+				<td><?php echo $obj->apellido_medico2?></td>
+				<td><?php echo $obj->fecha_medico?></td>
+				<td><?php echo $obj->especialidad?></td>
+				<td><?php echo $obj->usu_medico?></td>	
+				<td><?php echo $obj->pass_medico?></td>	
+			</tr>
+			
+		<?php } ?>
+
+	</table>
+	
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head>
+<body>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Clave</th>
+			<th>Nombre</th>
+			<th>Apellido Paterno</th>
+			<th>Apellido Materno</th>
+			<th>Sexo</th>
+			<th>Domicilio</th>
+			<th>Fecha Nacimiento</th>
+			<th>Fecha Consulta</th>
+			<th>Diagnostico</th>
+			<th>Usuario</th>
+			<th>Pass</th>
+		</tr>
+		<?php while ($obj = $pacientes->fetch_object()){		
+				LimpiaResultados($obj);
+		?>
+			<tr>
+				<td align="center"><?php echo $obj->id_paciente?></td>
+				<td align="center"><?php echo $obj->clave?></td>
+				<td align="center"><?php echo $obj->nombre?></td>
+				<td align="center"><?php echo $obj->apellido_paterno?></td>
+				<td align="center"><?php echo $obj->apellido_materno?></td>
+				<td align="center"><?php echo $obj->sexo?></td>
+				<td align="center"><?php echo $obj->domicilio?></td>
+				<td align="center"><?php echo $obj->fecha_pa?></td>
+				<td align="center"><?php echo $obj->fecha_consulta?></td>		
+				<td align="center"><?php echo $obj->diagnostico?></td>
+				<td align="center"><?php echo $obj->usu_paciente?></td>	
+				<td align="center"><?php echo $obj->pass_paciente?></td>	
+			</tr>
+			
+		<?php } ?>
+	</table>
+	
+</body>
+</html>
+

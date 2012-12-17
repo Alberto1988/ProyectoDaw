@@ -1,0 +1,135 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+    color: #262626;
+    margin: 0;
+    padding: 0;
+    background: url("medicina.jpg");
+}
+
+.principal {
+    width: 100%;
+    height: 80px;
+    background : #464646;
+    background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+    border-top: 2px solid #939393;
+    position: relative;
+    margin-bottom: 30px;
+	
+}
+
+.title {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.fl {
+    float: left;
+}
+
+.contenedor {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.menu {
+    height: 80px;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+    float:left;
+}
+
+TABLE{
+	position:relative;
+	margin-top:11em;
+	left:0px;
+	background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+	border: 2px solid black;
+	
+}
+
+
+
+TABLE TR {
+	color:black;
+}
+TABLE TD{
+	color:white;
+}
+p n_alta{
+	position:absolute;
+	margin-top:11em;
+	left:500px;
+	background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+}
+
+table#med{
+	position:absolute;
+	margin-top:11em;
+	left:0px;
+	background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+
+	
+}
+
+form#bajas{
+	position:absolute;
+	margin-top:11em;
+	left:500px;
+	background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+}
+
+INPUT.guay {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 7px 9px;
+	background: -moz-linear-gradient(
+		top,
+		#141314 0%,
+		#5c4d4d);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#141314),
+		to(#5c4d4d));
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	border-radius: 22px;
+	border: 0px solid #7d787d;
+	-moz-box-shadow:
+		0px 3px 7px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(20,20,20,1);
+	-webkit-box-shadow:
+		0px 3px 7px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(20,20,20,1);
+	box-shadow:
+		0px 3px 7px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(20,20,20,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+TABLE#muestra{
+	position: absolute;
+	margin-top:2em;
+	left:-240px;
+	background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+	border-radius: 22px;
+	border: 1px solid #7d787d;
+}
+
+
+
+
+
+

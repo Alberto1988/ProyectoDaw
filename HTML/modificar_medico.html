@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Modificacion Medicos</title>
+</head>
+<body>
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
+	<TABLE>
+		<TR>
+			<TD>Id Medico:</TD>
+			<TD><INPUT TYPE="text" NAME="id" SIZE="20" MAXLENGTH="30" value="<?php echo $id ?>" readonly></TD>
+		</TR>
+		<TR>
+			<TD>Cedula:</TD>
+			<TD><INPUT TYPE="text" NAME="cedula" SIZE="20" MAXLENGTH="30"></TD>
+		</TR>
+		<TR>
+			<TD>Nombre:</TD>
+			<TD><INPUT TYPE="text" NAME="nombre" SIZE="20" MAXLENGTH="30"></TD>
+		</TR>
+		<TR>
+			<TD>Usuario:</TD>
+			<TD><INPUT TYPE="text" NAME="usuario" SIZE="20" MAXLENGTH="30"></TD>
+		</TR>
+		<TR>
+			<TD>Contrase&ntildea:</TD>
+			<TD><INPUT TYPE="text" NAME="pass" SIZE="20" MAXLENGTH="30"></TD>
+		</TR>
+		<TR><TD><INPUT TYPE="submit" NAME="modifica" VALUE="Modifica"></TD></TR>
+	</TABLE>
+</FORM>
